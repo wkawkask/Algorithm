@@ -12,51 +12,52 @@ import java.util.StringTokenizer;
  */
 public class Main {
 
-    
     public static void main(String[] args) {
-       
-        try{
 
-            
+        try {
+
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-            int N,K;
+            int N, K;
+            // 카운트
+            int cnt = 0;
 
-            //첫째 줄에 N과 K가 주어진다. (1 ≤ N ≤ 10, 1 ≤ K ≤ 100,000,000)
+            // 첫째 줄에 N과 K가 주어진다. (1 ≤ N ≤ 10, 1 ≤ K ≤ 100,000,000)
 
             StringTokenizer st = new StringTokenizer(br.readLine());
 
-                N = Integer.parseInt(st.nextToken());
-                K = Integer.parseInt(st.nextToken());
+            N = Integer.parseInt(st.nextToken());
+            K = Integer.parseInt(st.nextToken());
 
             ArrayList<Integer> money = new ArrayList<Integer>();
 
-            //둘째 줄부터 N개의 줄에 동전의 가치 Ai가 오름차순으로 주어진다. (1 ≤ Ai ≤ 1,000,000, A1 = 1, i ≥ 2인 경우에 Ai는 Ai-1의 배수)
-            do {
+            // 둘째 줄부터 N개의 줄에 동전의 가치 Ai가 오름차순으로 주어진다. (1 ≤ Ai ≤ 1,000,000, A1 = 1, i ≥ 2인 경우에
+            // Ai는 Ai-1의 배수)
+
+            for (int i = 0; i < N; i++) {
                 st = new StringTokenizer(br.readLine());
                 money.add(Integer.parseInt(st.nextToken()));
-            } while(st.hasMoreTokens());
-            
-            for(int i=money.size(); i>0; i--){
-               if(money.get(i-1) > K){
+            }
+
+            for (int i = money.size(); i > 0; i--) {
+                if (money.get(i - 1) > K) {
                     continue;
-               }
-               System.out.println(money.get(i-1));
+                }
+                cnt += K / money.get(i - 1);
+                K = K % money.get(i - 1);
 
+                if (K == 0) {
+                    break;
+                }
 
-            }            
+            }
             br.close();
-            
 
-        }catch(Exception e){
+            System.out.println(cnt);
+        } catch (Exception e) {
 
         }
 
-        
-
     }
-
-
-
 
 }
