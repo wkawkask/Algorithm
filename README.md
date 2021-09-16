@@ -9,7 +9,7 @@ Algorithm Education
 
 각 폴더로 정리하였습니다.
 
-1.[과제 1](https://google.com, "google link")
+1.[과제 1](https://github.com/wkawkask/Algorithm/tree/main/%EA%B3%BC%EC%A0%9C1, "git link")
 
 2.[과제 2](https://google.com, "google link")
 
