@@ -25,5 +25,8 @@ Algorithm Education
 5.[과제 5](https://github.com/wkawkask/Algorithm/tree/main/%EA%B3%BC%EC%A0%9C5)
   종료일시 : 2021-10-15 00:00
   
-5.[과제 6](https://github.com/wkawkask/Algorithm/tree/main/%EA%B3%BC%EC%A0%9C6)
+6.[과제 6](https://github.com/wkawkask/Algorithm/tree/main/%EA%B3%BC%EC%A0%9C6)
   종료일시 : 2021-10-22 00:00
+  
+7.[과제 7](https://github.com/wkawkask/Algorithm/tree/main/%EA%B3%BC%EC%A0%9C7)
+  종료일시 : 2021-10-29 00:00  
